@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, number } from "framer-motion";
 import { Mail, MessageCircle, Send, MapPin, Phone } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    number: "",
     message: "",
   });
 
@@ -13,13 +14,13 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const whatsappMessage = `Name: ${formData.name}%0AEmail: ${formData.email}%0AMessage: ${formData.message}`;
+    const whatsappMessage = `Name: ${formData.name}%0AEmail: ${formData.email}%0ANumber: ${formData.number}%0AMessage: ${formData.message}`;
     window.open(
       `https://wa.me/9779809426540?text=${whatsappMessage}`,
       "_blank"
     );
     setStatus("Redirecting to WhatsApp...");
-    setFormData({ name: "", email: "", message: "" });
+    setFormData({ name: "", email: "", number: "", message: "" });
   };
 
   const handleChange = (
@@ -113,7 +114,25 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#3B8AB8] focus:outline-none transition-colors"
-                    placeholder="your.email@example.com"
+                    placeholder="your.email@gmail.com"
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-semibold text-gray-700 mb-2"
+                  >
+                    Number
+                  </label>
+                  <input
+                    type="number"
+                    id="number"
+                    name="number"
+                    value={formData.number}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#3B8AB8] focus:outline-none transition-colors"
+                    placeholder="+977-XXXXXXXXXX"
                   />
                 </div>
 

@@ -122,23 +122,17 @@ const Instructor = () => {
 
                 <div className="relative z-10">
                   <div className="w-40 h-40 bg-white rounded-full mx-auto mb-6 flex items-center justify-center text-6xl shadow-lg">
-                    👨‍🏫
+                    <img
+                      src="https://media.licdn.com/dms/image/v2/D4D03AQFU3EPZlnBeGg/profile-displayphoto-shrink_800_800/B4DZaBcMR6GwAg-/0/1745928375716?e=1762992000&v=beta&t=Yne6w3337_AwlD-dHq9pMgY5MmeKnQZFjrf76noUdjw"
+                      alt=""
+                      className="rounded-full"
+                    />
                   </div>
                   <h3 className="text-3xl font-bold text-white mb-2">
                     Alash Dhakal
                   </h3>
                   <p className="text-white/90 text-lg mb-4">
                     Field Engineer & Course Instructor
-                  </p>
-                  <div className="flex items-center justify-center gap-2 text-yellow-400 mb-4">
-                    <Star className="w-5 h-5 fill-yellow-400" />
-                    <Star className="w-5 h-5 fill-yellow-400" />
-                    <Star className="w-5 h-5 fill-yellow-400" />
-                    <Star className="w-5 h-5 fill-yellow-400" />
-                    <Star className="w-5 h-5 fill-yellow-400" />
-                  </div>
-                  <p className="text-white/80 text-sm">
-                    4.8/5 Rating from 500+ Students
                   </p>
                 </div>
               </div>

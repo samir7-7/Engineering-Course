@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
-import { Play, Clock, Users, Star } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Play, Clock, Users, Star } from "lucide-react";
 
 const VideoSection = () => {
   return (
@@ -14,14 +14,16 @@ const VideoSection = () => {
         >
           <div className="inline-flex items-center gap-2 bg-[#3B8AB8]/10 px-4 py-2 rounded-full mb-6">
             <Play className="w-4 h-4 text-[#3B8AB8]" />
-            <span className="text-[#3B8AB8] font-semibold text-sm">COURSE PREVIEW</span>
+            <span className="text-[#3B8AB8] font-semibold text-sm">
+              COURSE PREVIEW
+            </span>
           </div>
           <h2 className="text-4xl sm:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             See What You'll Learn
           </h2>
           <p className="text-xl sm:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Watch this preview to understand how this course will transform you from a college student
-            into a confident, job-ready site engineer
+            Watch this preview to understand how this course will transform you
+            from a college student into a confident, job-ready site engineer
           </p>
         </motion.div>
 
@@ -39,14 +41,17 @@ const VideoSection = () => {
               <div
                 className="absolute inset-0 flex items-center justify-center"
                 style={{
-                  backgroundImage: 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
+                  backgroundImage:
+                    'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
                 }}
               >
                 <div className="text-center z-10 relative">
                   <div className="bg-white/10 backdrop-blur-sm rounded-full p-8 inline-block mb-6 group-hover:scale-110 transition-transform">
                     <Play className="w-20 h-20 text-white fill-white" />
                   </div>
-                  <p className="text-white text-2xl font-bold">Watch Course Preview</p>
+                  <p className="text-white text-2xl font-bold">
+                    Watch Course Preview
+                  </p>
                   <p className="text-white/80 mt-2">5 minutes</p>
                 </div>
               </div>
@@ -81,9 +86,12 @@ const VideoSection = () => {
               className="bg-gray-50 rounded-xl p-6 text-center border-2 border-gray-100 hover:border-[#3B8AB8] transition-colors"
             >
               <div className="text-4xl mb-4">🎯</div>
-              <h3 className="font-bold text-gray-900 text-lg mb-2">Practical Focus</h3>
+              <h3 className="font-bold text-gray-900 text-lg mb-2">
+                Practical Focus
+              </h3>
               <p className="text-gray-600">
-                Learn by doing, not just watching. Real site scenarios and hands-on techniques.
+                Learn by doing, not just watching. Real site scenarios and
+                hands-on techniques.
               </p>
             </motion.div>
 
@@ -95,9 +103,12 @@ const VideoSection = () => {
               className="bg-gray-50 rounded-xl p-6 text-center border-2 border-gray-100 hover:border-[#3B8AB8] transition-colors"
             >
               <div className="text-4xl mb-4">⚡</div>
-              <h3 className="font-bold text-gray-900 text-lg mb-2">Fast Results</h3>
+              <h3 className="font-bold text-gray-900 text-lg mb-2">
+                Fast Results
+              </h3>
               <p className="text-gray-600">
-                Become job-ready in weeks. Students report immediate improvement in confidence.
+                Become job-ready in weeks. Students report immediate improvement
+                in confidence.
               </p>
             </motion.div>
 
@@ -109,9 +120,12 @@ const VideoSection = () => {
               className="bg-gray-50 rounded-xl p-6 text-center border-2 border-gray-100 hover:border-[#3B8AB8] transition-colors"
             >
               <div className="text-4xl mb-4">💰</div>
-              <h3 className="font-bold text-gray-900 text-lg mb-2">Best Value</h3>
+              <h3 className="font-bold text-gray-900 text-lg mb-2">
+                Best Value
+              </h3>
               <p className="text-gray-600">
-                More affordable than any other course. Lifetime access with no hidden fees.
+                More affordable than any other course. Lifetime access with no
+                hidden fees.
               </p>
             </motion.div>
           </div>
