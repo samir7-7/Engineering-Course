@@ -6,6 +6,10 @@ import {
   GraduationCap,
   CheckCircle,
   Star,
+  Facebook,
+  Instagram,
+  Linkedin,
+  Twitter,
 } from "lucide-react";
 
 const Instructor = () => {
@@ -120,7 +124,7 @@ const Instructor = () => {
                   </svg>
                 </div>
 
-                <div className="relative z-10">
+                <div className="relative z-10 flex flex-col items-center gap-3">
                   <div className="w-40 h-40 bg-white rounded-full mx-auto mb-6 flex items-center justify-center text-6xl shadow-lg">
                     <img
                       src="https://media.licdn.com/dms/image/v2/D4D03AQFU3EPZlnBeGg/profile-displayphoto-shrink_800_800/B4DZaBcMR6GwAg-/0/1745928375716?e=1762992000&v=beta&t=Yne6w3337_AwlD-dHq9pMgY5MmeKnQZFjrf76noUdjw"
@@ -128,12 +132,30 @@ const Instructor = () => {
                       className="rounded-full"
                     />
                   </div>
-                  <h3 className="text-3xl font-bold text-white mb-2">
-                    Alash Dhakal
-                  </h3>
-                  <p className="text-white/90 text-lg mb-4">
-                    Field Engineer & Course Instructor
-                  </p>
+                  <div>
+                    {" "}
+                    <h3 className="text-3xl font-bold text-white mb-2">
+                      Alash Dhakal
+                    </h3>
+                    <p className="text-white/90 text-lg mb-4">
+                      Field Engineer & Course Instructor
+                    </p>
+                  </div>
+
+                  <div className="socials text-white flex gap-7">
+                    <a href="">
+                      <Facebook className="w-5 h-5 hover:text-gray-300" />
+                    </a>
+                    <a href="">
+                      <Instagram className="w-5 h-5 hover:text-gray-300" />
+                    </a>
+                    <a href="">
+                      <Linkedin className="w-5 h-5 hover:text-gray-300" />
+                    </a>
+                    <a href="">
+                      <Twitter className="w-5 h-5 hover:text-gray-300" />
+                    </a>
+                  </div>
                 </div>
               </div>
 
